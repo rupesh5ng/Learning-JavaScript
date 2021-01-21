@@ -25,3 +25,7 @@ console.log("abcdefg".slice(2, -1));
 //"cdef"
 console.log("abcdefg".slice(2, -2));
 //"cde"
+
+
+
+
