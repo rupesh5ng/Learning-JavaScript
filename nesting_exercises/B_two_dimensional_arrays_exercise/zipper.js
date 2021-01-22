@@ -1,7 +1,13 @@
 // Write a function `zipper` that accepts two arrays as arguments. The function should return a 2D
 // array containing pairs of elements at the same indices. You can assume that the arrays have the 
 // same length.
-
+let zipper = function (arr1,arr2) {
+  let finalarr =[];
+  for (i=0; i < arr1.length; i++){
+    finalarr.push([ arr1[i] , arr2[i] ]);
+  }
+  return finalarr;
+}
 let array1 = ["a", "b", "c", "d"];
 let array2 = [-1, -2, -3, -4];
 console.log(zipper(array1, array2));

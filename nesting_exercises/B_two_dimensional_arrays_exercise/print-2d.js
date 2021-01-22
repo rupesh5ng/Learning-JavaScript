@@ -1,5 +1,16 @@
+'use strict'
 // Write a function `print2d` that accepts a two-dimensional array as an argument. The function
 // should print all inner elements of the array.
+
+let print2d = function (array) {
+  for (let i = 0; i < array.length; i++) {
+    let subArr = array[i];
+    for(let j = 0; j < subArr.length ; j++) {
+      console.log(subArr[j]);
+    }
+  }
+};
+
 
 let array1 = [
   ["a", "b", "c", "d"],
