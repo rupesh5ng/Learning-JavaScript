@@ -4,6 +4,22 @@
 //
 // For example, 4 is a perfect square because 2 * 2 = 4
 // For example, 81 is a perfect square because 9 * 9 = 81
+let perfectSquare = function(num) {
+  for (let i = 1; i < num; i++){
+    if (i*i === num ) return true;
+  }
+  return false
+};
+
+let pickPerfectSquares = function(array){
+  let newArr =[];
+  array.forEach (function(num) {
+    if (perfectSquare(num)) {
+      newArr.push(num);
+    }
+  })
+  return newArr;
+};
 
 console.log(pickPerfectSquares([6, 4, 81, 21, 36])); // [4, 81, 36]
 console.log(pickPerfectSquares([100, 24, 144])); // [100, 144]
